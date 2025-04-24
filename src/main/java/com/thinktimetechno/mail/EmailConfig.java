@@ -21,9 +21,9 @@ public class EmailConfig {
     public static final String SERVER = "smtp.hostinger.com";
     public static final String PORT = "587";
 
-    public static final String FROM = "hariharan@thinktime.in";
-    public static final String PASSWORD = "Hariharan@2023";
+    public static final String FROM = "shankar@thinktime.in";
+    public static final String PASSWORD = "Shankar@2024";
 
-    public static final String[] TO = {"shankar@thinktime.in"};
+    public static final String[] TO = {"satnam@cpraedcourse.com"};
     public static final String SUBJECT = FrameworkConstants.REPORT_TITLE;
 }
