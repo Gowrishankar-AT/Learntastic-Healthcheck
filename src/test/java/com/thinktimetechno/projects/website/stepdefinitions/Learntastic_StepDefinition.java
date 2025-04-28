@@ -366,6 +366,7 @@ WebUI.getURL("https://learntastic.com/");
 	    @Then("the user should be navigated to the Refund Policy page")
 	    public void theUserShouldBeNavigatedToRefundPolicyPage() {
 	        Assert.assertTrue(WebUI.verifyPageTitleContains("Refund Policy | LearnTastic"));
+	
 	    }
 
 	    @Then("the user should be navigated to the Terms of Use page")
@@ -400,6 +401,106 @@ WebUI.getURL("https://learntastic.com/");
 		    	        Assert.assertTrue(actualLinks.contains(expected));
 		    	    }
 	
+	    }
+	    
+	    
+	    @When("the user clicks on the {string} link under Healthcare section")
+	    public void the_user_clicks_on_the_link_under_healthcare_section(String courseName) {
+	   
+	    	WebUI.waitForElementVisible(
+					By.xpath("//div[@class='modal-content']/div/button[@class='close dis-modal-close']"));
+			WebUI.clickElementWithJs(By.xpath("//div[@class='modal-content']/div/button[@class='close dis-modal-close']"));
+			if(WebUI.verifyElementExists(By.xpath("//div[@class='modal-content']/div/button[@class='close dis-modal-close']"))) {
+				WebUI.clickElementWithJs(By.xpath("//div[@class='modal-content']/div/button[@class='close dis-modal-close']"));
+			}
+	    WebUI.clickElementWithJs(By.xpath("//span[contains(text(), '"+courseName+"')]"));
+	    
+	    }
+
+	    @When("the user clicks on the {string} link under Assisted Living section")
+	    public void the_user_clicks_on_the_link_under_assisted_living_section(String courseName) {
+	    	WebUI.waitForElementVisible(
+					By.xpath("//div[@class='modal-content']/div/button[@class='close dis-modal-close']"));
+			WebUI.clickElementWithJs(By.xpath("//div[@class='modal-content']/div/button[@class='close dis-modal-close']"));
+			if(WebUI.verifyElementExists(By.xpath("//div[@class='modal-content']/div/button[@class='close dis-modal-close']"))) {
+				WebUI.clickElementWithJs(By.xpath("//div[@class='modal-content']/div/button[@class='close dis-modal-close']"));
+			}
+	    WebUI.clickElementWithJs(By.xpath("//span[contains(text(), '"+courseName+"')]"));
+	    
+	    
+	    
+	    }
+	    
+	    @When("the user clicks the {string} course link")
+	    public void the_user_clicks_the_course_link(String courseName) {
+	    	WebUI.waitForElementVisible(
+					By.xpath("//div[@class='modal-content']/div/button[@class='close dis-modal-close']"));
+			WebUI.clickElementWithJs(By.xpath("//div[@class='modal-content']/div/button[@class='close dis-modal-close']"));
+			if(WebUI.verifyElementExists(By.xpath("//div[@class='modal-content']/div/button[@class='close dis-modal-close']"))) {
+				WebUI.clickElementWithJs(By.xpath("//div[@class='modal-content']/div/button[@class='close dis-modal-close']"));
+			}
+	    WebUI.clickElementWithJs(By.xpath("//span[contains(text(), '"+courseName+"')]"));
+	    
+	    
+	    }
+
+	    @Then("the user should be taken to the Physicians course page")
+	    public void the_user_should_be_taken_to_the_physicians_course_page() {
+	        Assert.assertTrue(WebUI.verifyPageTitleContains("Training Programs for Physicians"));
+	    }
+
+	    @Then("the user should be taken to the Pharmacist course page")
+	    public void the_user_should_be_taken_to_the_pharmacist_course_page() {
+	        Assert.assertTrue(WebUI.verifyPageTitleContains("Training Programs for Pharmacists"));
+	    }
+
+	    @Then("the user should be taken to the Registered Nurse course page")
+	    public void the_user_should_be_taken_to_the_registered_nurse_course_page() {
+	        Assert.assertTrue(WebUI.verifyPageTitleContains("Training Programs for Registered Nurses"));
+	    }
+
+	    @Then("the user should be taken to the Nurse Practitioner course page")
+	    public void the_user_should_be_taken_to_the_nurse_practitioner_course_page() {
+	        Assert.assertTrue(WebUI.verifyPageTitleContains("Training Programs for Nurse Practitioners"));
+	    }
+
+	    @Then("the user should be taken to the Assisted Living Facility Manager course page")
+	    public void the_user_should_be_taken_to_the_assisted_living_facility_manager_course_page() {
+	        Assert.assertTrue(WebUI.verifyPageTitleContains("Facility Manager Training for Assisted Living"));
+	    }
+
+	    @Then("the user should be taken to the Assisted Living Nursing course page")
+	    public void the_user_should_be_taken_to_the_assisted_living_nursing_course_page() {
+	        Assert.assertTrue(WebUI.verifyPageTitleContains("Nursing Training for Assisted Living"));
+	    }
+
+	    @Then("the user should be taken to the Caregivers course page")
+	    public void the_user_should_be_taken_to_the_caregivers_course_page() {
+	        Assert.assertTrue(WebUI.verifyPageTitleContains("Caregiver Training Program for Assisted Living"));
+	    }
+
+	    @Then("the user should be taken to the ALF Training course page")
+	    public void the_user_should_be_taken_to_the_alf_training_course_page() {
+	        Assert.assertTrue(WebUI.verifyPageTitleContains("ALF Training Courses - Assisted Living Facilities"));
+	    }
+	    @Then("the user should be taken to the Athletic Trainers course page")
+	    public void the_user_should_be_taken_to_the_athletic_trainers_course_page() {
+	        Assert.assertTrue(WebUI.verifyPageTitleContains("Athletic Trainers - Expert Care for Peak Performance | Learntastic"));
+	    }
+
+	    @Then("the user should be taken to the Massage Therapy course page")
+	    public void the_user_should_be_taken_to_the_massage_therapy_course_page() {
+	        Assert.assertTrue(WebUI.verifyPageTitleContains("Massage Courses Online | LearnTastic"));
+	    }
+
+	    @Then("the user should be taken to the Occupational Therapy course page")
+	    public void the_user_should_be_taken_to_the_occupational_therapy_course_page() {
+	        Assert.assertTrue(WebUI.verifyPageTitleContains("Occupational Therapy - Enhance Daily Living Skills | Learntastic"));
+	    }
+
+	    @Then("the user should be taken to the Physical Therapy course page")
+	    public void the_user_should_be_taken_to_the_physical_therapy_course_page() {
+	        Assert.assertTrue(WebUI.verifyPageTitleContains("Continuing Education For Physical Therapists | LearnTastic"));
 	    }
 	
 }

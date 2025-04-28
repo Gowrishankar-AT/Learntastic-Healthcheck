@@ -38,17 +38,17 @@ Scenario: Verify and navigate to the 'Login' page "https://learntastic.com/login
   When User clicks on "Login"
   Then User should be navigated to the login page
 
-Scenario: Verify and navigate to the 'Cart' page
+Scenario: Verify and navigate to the 'Cart' page "https://learntastic.com/carts"
   Given User is on the LearnTastic homepage
   When User clicks on the "Cart" icon
   Then User should be navigated to the payment and course start page
 
-Scenario: Verify 'Help me choose' pop-up
+Scenario: Verify 'Help me choose' pop-up "https://learntastic.com"
   Given User is on the LearnTastic homepage
   When User clicks on Help me choose button
   Then User should see a pop-up message Let us help you choose a course
 
-Scenario: Verify 'Join for free' pop-up
+Scenario: Verify 'Join for free' pop-up "https://learntastic.com"
   Given User is on the LearnTastic homepage
   When User clicks on Join for free button
   Then User should see a pop-up message "Sign up & start learning"

@@ -9,8 +9,6 @@ Feature: Help Center section in footer
      Given User is on the LearnTastic homepage
 
 
-
-
 Scenario: Check navigation for About page "https://learntastic.com/about-us"
   When the user clicks the "About" link in the Quick Links section
   Then the user should be taken to the About page

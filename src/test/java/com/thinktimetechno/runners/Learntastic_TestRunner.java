@@ -13,8 +13,8 @@ import org.testng.annotations.Test;
 @CucumberOptions(features = "src/test/resources/features/HealthCheck", glue = {
 		"com.thinktimetechno.projects.website.stepdefinitions", "com.thinktimetechno.hooks" }, plugin = {
 				"com.thinktimetechno.hooks.CucumberListener", "pretty",
-				"html:target/cucumber-reports/LoginCMSTestRunner.html",
-				"json:target/cucumber-reports/LoginCMSTestRunner.json",
+				"html:target/cucumber-reports/Learntastic_TestRunner.html",
+				"json:target/cucumber-reports/Learntastic_TestRunner.json",
 				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
 				monochrome = true, tags ="@HealthCheck")

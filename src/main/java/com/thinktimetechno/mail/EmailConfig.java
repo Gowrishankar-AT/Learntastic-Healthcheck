@@ -23,12 +23,12 @@ public class EmailConfig {
 
     public static final String FROM = "shankar@thinktime.in";
     public static final String PASSWORD = "Shankar@2024";
-<<<<<<< HEAD
-//"satnam@cpraedcourse.com","shankar@thinktime.in","sunnykumar@cpraedcourse.com","hieu@cpraedcourse.com","ranjan@learntastic.com","rohan@cpraedcourse.com","debasree@cpraedcourse.com"
-    public static final String[] TO = {"priya@thinktime.in"};
-=======
 
-    public static final String[] TO = {"priya@thinktime.in","satnam@learntastic.com"};
->>>>>>> d47ca0dc30902412c26520bcc3169fe158149ee6
+//"satnam@cpraedcourse.com","shankar@thinktime.in","sunnykumar@cpraedcourse.com","hieu@cpraedcourse.com","ranjan@learntastic.com","rohan@cpraedcourse.com","debasree@cpraedcourse.com"
+    public static final String[] TO = {"priya@thinktime.in","satnam@cpraedcourse.com","sunnykumar@cpraedcourse.com","hieu@cpraedcourse.com","ranjan@learntastic.com","rohan@cpraedcourse.com","debasree@cpraedcourse.com"};
+
+
+//    public static final String[] TO = {"priya@thinktime.in","satnam@learntastic.com"};
+
     public static final String SUBJECT = FrameworkConstants.REPORT_TITLE;
 }
