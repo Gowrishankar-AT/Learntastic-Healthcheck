@@ -89,23 +89,23 @@ public class EmailSendUtils {
 
 				"<p>Hi Team,</p>"
 				+ "<p>Here's today's UI application testing summary highlighting your application's current health.</p>"
+				+ "<p><strong style='color:#4169E1;'>Application Name:</strong> Learntastic</p>"
+				+ "<p><strong style='color:#4169E1;'>Application URL:</strong> <a href='https://learntastic.com' style='color:#1E90FF;'>https://learntastic.com</a></p>"
 				+ "<p><strong style='color:#4169E1;'>Execution Date & Time:</strong> " + executionDate + " IST</p>" +
 
-				"<p><strong style='color:#4169E1;'>Test Summary:</strong></p>"
+				"<p><strong style='color:#4169E1;'>UI Page Health Check Summary:</strong></p>"
 				+ "<table border='1' cellpadding='5' cellspacing='0' "
 				+ "style='border-collapse:collapse; text-align:center; width:40%; font-size:9px; margin-top:5px; margin-bottom:5px;'>"
 				+ "<tr style='background-color:#000000; color:#ffffff;'>"
-				+ "<th>Total</th>" + "<th>Passed</th>" + "<th>Failed</th>" + "<th>Skipped</th>" + "<th>Pass %</th>"
+				+ "<th>Total Pages</th>" + "<th>Passed</th>" + "<th>Failed</th>" + "<th>Skipped</th>" + "<th>Pass %</th>"
 				+ "</tr>" + "<tr>" + "<td>" + count_totalTCs + "</td>" + "<td style='color:green;'>" + count_passedTCs
 				+ "</td>" + "<td style='color:red;'>" + count_failedTCs + "</td>" + "<td style='color:orange;'>"
 				+ count_skippedTCs + "</td>" + "<td>" + String.format("%.2f", passPercentage) + "%</td>" + "</tr>"
 				+ "</table>" +
 
 				statusMessage
-				+ "<p>You can find the detailed test results in the attached report.</p>"
-				+ "<p>You may refer to <a href='https://github.com/Gowrishankar-AT/Learntastic-Healthcheck"
-				+ "' style='color:#1E90FF;'>this</a> repository to see the source code.</p>"
+				+ "<p>Please download the attached HTML report to access detailed test results.</p>"
 				+ "<p>Best regards,<br/>" + companyName + ".<br/>"
-				+ "<a href='https://thinktime.in/' style='color:#1E90FF;'>WWW.thinktime.in/</a></p>" + "</body></html>";
+				+ "<a href='https://thinktime.in/' style='color:#1E90FF;'>www.thinktime.in</a></p>" + "</body></html>";
 	}
 }

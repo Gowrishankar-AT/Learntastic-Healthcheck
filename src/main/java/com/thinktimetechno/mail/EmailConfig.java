@@ -23,7 +23,7 @@ public class EmailConfig {
 
     public static final String FROM = "shankar@thinktime.in";
     public static final String PASSWORD = "Shankar@2024";
-
-    public static final String[] TO = {"satnam@cpraedcourse.com"};
+//"satnam@cpraedcourse.com","shankar@thinktime.in","sunnykumar@cpraedcourse.com","hieu@cpraedcourse.com","ranjan@learntastic.com","rohan@cpraedcourse.com","debasree@cpraedcourse.com"
+    public static final String[] TO = {"priya@thinktime.in"};
     public static final String SUBJECT = FrameworkConstants.REPORT_TITLE;
 }
