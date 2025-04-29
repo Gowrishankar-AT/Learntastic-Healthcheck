@@ -52,7 +52,7 @@ public class EmailSendUtils {
 
     }
 
-    private static String getTestCasesCountInFormat(int count_totalTCs, int count_passedTCs, int count_failedTCs,
+ private static String getTestCasesCountInFormat(int count_totalTCs, int count_passedTCs, int count_failedTCs,
 			int count_skippedTCs) {
 
 		String executionDate = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd 'at' hh:mm a"));
@@ -64,25 +64,24 @@ public class EmailSendUtils {
 		String statusMessage;
 		if (count_failedTCs == 0) {
 			statusMessage = "<br/><p><strong style='color:#4169E1;'>Status Overview:</strong></p>" + "<ul>"
-					+ "<li>All automated test cases have passed successfully.</li>"
-					+ "<li>Your application is functioning flawlessly.</li>"
-					+ "<li>No issues were detected in the latest test cycle.</li>" + "</ul>";
+					+ "<li>The application is performing optimally, with all monitored functionalities operating as expected.</li>"
+					+ "<li>No issues have been identified in the latest evaluation cycle.</li>"
+					+ "<li>At this time, no immediate action is required. Continued monitoring is recommended.</li>" + "</ul>";
 		} else if (failurePercentage < 50) {
 			statusMessage = "<br/><p><strong style='color:#4169E1;'>Status Overview:</strong></p>" + "<ul>"
-					+ "<li>The majority of the application is performing as expected, with a few minor hiccups.</li>"
-					+ "<li>While " + count_failedTCs
-					+ " test cases have failed, the system remains largely stable.</li>"
-					+ "<li>It is recommended to review the failed scenarios to ensure optimal performance.</li>" + "</ul>";
+					+ "<li>The application remains largely stable, with minor discrepancies observed.</li>"
+					+ "<li><strong>" + count_failedTCs + "</strong> functionalities exhibited deviations from the expected behavior.</li>"
+					+ "<li>It is advisable to review and address these areas to ensure sustained performance and user satisfaction.</li>" + "</ul>";
 		} else if (failurePercentage < 100) {
 			statusMessage = "<br/><p><strong style='color:#4169E1;'>Status Overview:</strong></p>" + "<ul>"
-					+ "<li>The latest test run indicates major stability issues in the application.</li>"
-					+ "<li>More than half of the test cases have failed (" + count_failedTCs + " failed).</li>"
-					+ "<li>Immediate attention is required to investigate and resolve the failures.</li>" + "</ul>";
+					+ "<li>The application is currently experiencing significant functional challenges.</li>"
+					+ "<li>A substantial number of functionalities (<strong>" + count_failedTCs + "</strong> instances) did not meet expected outcomes.</li>"
+					+ "<li>Prompt investigation and remediation are strongly recommended to restore operational reliability.</li>" + "</ul>";
 		} else {
 			statusMessage = "<br/><p><strong style='color:#4169E1;'>Status Overview:</strong></p>" + "<ul>"
-					+ "<li>All automated test cases have failed.</li>"
-					+ "<li>The application is currently in a non-functional state.</li>"
-					+ "<li>Urgent intervention is required to restore basic functionality.</li>" + "</ul>";
+					+ "<li>The application is presently non-operational, with all monitored functionalities failing validation.</li>"
+					+ "<li>This situation requires immediate and prioritized attention to initiate recovery and stabilize the platform.</li>"
+					+ "<li>It is recommended to conduct a comprehensive review and implement corrective actions urgently.</li>" + "</ul>";
 		}
 
 		return "<html>" + "<body style=\"font-family:Verdana, sans-serif; font-size:13px; color:#333\">" +
