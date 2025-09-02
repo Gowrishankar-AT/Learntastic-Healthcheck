@@ -25,7 +25,7 @@ public class EmailConfig {
     public static final String PASSWORD = "Shankar@2024";
 
 //"satnam@cpraedcourse.com","shankar@thinktime.in","sunnykumar@cpraedcourse.com","hieu@cpraedcourse.com","ranjan@learntastic.com","rohan@cpraedcourse.com","debasree@cpraedcourse.com"
-    public static final String[] TO = {"priya@thinktime.in"};
+    public static final String[] TO = {"priya@thinktime.in","satnam@cpraedcourse.com","sunnykumar@cpraedcourse.com","hieu@cpraedcourse.com","ranjan@learntastic.com","rohan@cpraedcourse.com","debasree@cpraedcourse.com"};
 
 
 //    public static final String[] TO = {"priya@thinktime.in","satnam@learntastic.com"};
