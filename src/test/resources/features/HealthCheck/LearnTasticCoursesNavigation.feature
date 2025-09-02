@@ -7,6 +7,7 @@ Feature: LearnTastic Courses Navigation
 # Healthcare Courses
 
 Scenario: Navigate to Physicians course page "https://learntastic.com/healthcare/physicians"
+      
   When the user clicks on Physicians link
   Then the user should be navigated to the Physicians course page
 

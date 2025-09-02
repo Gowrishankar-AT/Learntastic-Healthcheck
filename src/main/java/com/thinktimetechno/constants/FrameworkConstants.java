@@ -65,6 +65,134 @@ public final class FrameworkConstants {
     public static final String EXTENT_REPORT_FOLDER_PATH = PROJECT_PATH + EXTENT_REPORT_FOLDER;
     public static final String EXTENT_REPORT_FILE_NAME = EXTENT_REPORT_NAME + ".html";
     public static String EXTENT_REPORT_FILE_PATH = EXTENT_REPORT_FOLDER_PATH + File.separator + EXTENT_REPORT_FILE_NAME;
+    
+    //LOCATORS
+    
+    public static final String LEARNTASTIC_PRODUCTION_URL = PropertiesHelpers.getValue("LEARNTASTIC_PRODUCTION_URL");
+    public static final String HOMEPAGE_MODAL_CLOSE_BUTTON = PropertiesHelpers.getValue("HOMEPAGE_MODAL_CLOSE_BUTTON");
+    public static final String HOMEPAGE_HELP_CENTER_LINK = PropertiesHelpers.getValue("HOMEPAGE_HELP_CENTER_LINK");
+    public static final String STUDENT_LOGIN_BUTTON = PropertiesHelpers.getValue("STUDENT_LOGIN_BUTTON");
+    public static final String ABOUT_BUTTON = PropertiesHelpers.getValue("ABOUT_BUTTON");
+    public static final String GROUP_LOGIN_BUTTON = PropertiesHelpers.getValue("GROUP_LOGIN_BUTTON");
+    public static final String FAQ_BUTTON = PropertiesHelpers.getValue("FAQ_BUTTON");
+    public static final String VERIFY_CERTIFICATE_BUTTON = PropertiesHelpers.getValue("VERIFY_CERTIFICATE_BUTTON");
+    public static final String REVIEWS_BUTTON = PropertiesHelpers.getValue("REVIEWS_BUTTON");
+    public static final String BLOGS_BUTTON = PropertiesHelpers.getValue("BLOGS_BUTTON");
+    public static final String PARTNERS_BUTTON = PropertiesHelpers.getValue("PARTNERS_BUTTON");
+    public static final String CONTACT_US_BUTTON = PropertiesHelpers.getValue("CONTACT_US_BUTTON");
+    public static final String PRIVACY_POLICY_BUTTON = PropertiesHelpers.getValue("PRIVACY_POLICY_BUTTON");
+    public static final String REFUND_POLICY_BUTTON = PropertiesHelpers.getValue("REFUND_POLICY_BUTTON");
+    public static final String TERMS_OF_USE_BUTTON = PropertiesHelpers.getValue("TERMS_OF_USE_BUTTON");
+    public static final String CONSTRUCTION_BUTTON = PropertiesHelpers.getValue("CONSTRUCTION_BUTTON");
+    public static final String HEALTHCARE_BUTTON = PropertiesHelpers.getValue("HEALTHCARE_BUTTON");
+    public static final String ASSISTED_LIVING_BUTTON = PropertiesHelpers.getValue("ASSISTED_LIVING_BUTTON");
+    public static final String THERAPY_BUTTON = PropertiesHelpers.getValue("THERAPY_BUTTON");
+    public static final String EDUCATION_BUTTON = PropertiesHelpers.getValue("EDUCATION_BUTTON");
+    public static final String GROUP_DISCOUNT_BUTTON = PropertiesHelpers.getValue("GROUP_DISCOUNT_BUTTON");
+    public static final String LOGIN_BUTTON = PropertiesHelpers.getValue("LOGIN_BUTTON");
+    public static final String PHYSICIANS_BUTTON = PropertiesHelpers.getValue("PHYSICIANS_BUTTON");
+    public static final String PHARMACIST_BUTTON = PropertiesHelpers.getValue("PHARMACIST_BUTTON");
+    public static final String REGISTERED_NURSE_BUTTON = PropertiesHelpers.getValue("REGISTERED_NURSE_BUTTON");
+    public static final String NURSE_PRACTITIONER_BUTTON = PropertiesHelpers.getValue("NURSE_PRACTITIONER_BUTTON");
+    public static final String ASSISTED_LIVING_FACILITY_MANAGER_BUTTON = PropertiesHelpers.getValue("ASSISTED_LIVING_FACILITY_MANAGER_BUTTON");
+    public static final String ASSISTED_LIVING_NURSING_BUTTON = PropertiesHelpers.getValue("ASSISTED_LIVING_NURSING_BUTTON");
+    public static final String CAREGIVERS_BUTTON = PropertiesHelpers.getValue("CAREGIVERS_BUTTON");
+    public static final String ALF_TRAINING_BUTTON = PropertiesHelpers.getValue("ALF_TRAINING_BUTTON");
+    public static final String ATHLETIC_TRAINERS_COURSE_BUTTON = PropertiesHelpers.getValue("ATHLETIC_TRAINERS_COURSE_BUTTON");
+    public static final String MASSAGE_THERAPY_COURSE_BUTTON = PropertiesHelpers.getValue("MASSAGE_THERAPY_COURSE_BUTTON");
+    public static final String OCCUPATIONAL_THERAPY_COURSE_BUTTON = PropertiesHelpers.getValue("OCCUPATIONAL_THERAPY_COURSE_BUTTON");
+    public static final String PHYSICAL_THERAPY_COURSE_BUTTON = PropertiesHelpers.getValue("PHYSICAL_THERAPY_COURSE_BUTTON");
+    public static final String JOIN_FOR_FREE_BUTTON = PropertiesHelpers.getValue("JOIN_FOR_FREE_BUTTON");
+    public static final String CATEGORY_TITLE_OTHER = PropertiesHelpers.getValue("CATEGORY_TITLE_OTHER");
+    public static final String LOGIN_PAGE_TITLE = PropertiesHelpers.getValue("LOGIN_PAGE_TITLE");
+    public static final String GROUP_DISCOUNT_PAGE_TITLE = PropertiesHelpers.getValue("GROUP_DISCOUNT_PAGE_TITLE");
+
+    
+    
+    
+    
+    
+    public static final String ABOUT_PAGE_TITLE = PropertiesHelpers.getValue("ABOUT_PAGE_TITLE");
+    public static final String PARTNERS_PAGE_TITLE = PropertiesHelpers.getValue("PARTNERS_PAGE_TITLE");
+    public static final String REVIEWS_PAGE_TITLE = PropertiesHelpers.getValue("REVIEWS_PAGE_TITLE");
+    public static final String BLOGS_PAGE_TITLE = PropertiesHelpers.getValue("BLOGS_PAGE_TITLE");
+    public static final String VERIFY_CERTIFICATE_PAGE_TITLE = PropertiesHelpers.getValue("VERIFY_CERTIFICATE_PAGE_TITLE");
+    public static final String STUDENT_LOGIN_PAGE_TITLE = PropertiesHelpers.getValue("STUDENT_LOGIN_PAGE_TITLE");
+    public static final String FAQ_PAGE_TITLE = PropertiesHelpers.getValue("FAQ_PAGE_TITLE");
+    public static final String CONTACT_US_PAGE_TITLE = PropertiesHelpers.getValue("CONTACT_US_PAGE_TITLE");
+    public static final String PRIVACY_POLICY_PAGE_TITLE = PropertiesHelpers.getValue("PRIVACY_POLICY_PAGE_TITLE");
+    public static final String REFUND_POLICY_PAGE_TITLE = PropertiesHelpers.getValue("REFUND_POLICY_PAGE_TITLE");
+    public static final String GROUP_LOGIN_PAGE_TITLE = PropertiesHelpers.getValue("GROUP_LOGIN_PAGE_TITLE");
+    public static final String TERMS_OF_USE_PAGE_TITLE = PropertiesHelpers.getValue("TERMS_OF_USE_PAGE_TITLE");
+    
+    
+    public static final String PHYSICIANS_COURSE_PAGE_TITLE = PropertiesHelpers.getValue("PHYSICIANS_COURSE_PAGE_TITLE");
+    public static final String PHARMACIST_COURSE_PAGE_TITLE = PropertiesHelpers.getValue("PHARMACIST_COURSE_PAGE_TITLE");
+    public static final String REGISTERED_NURSE_COURSE_PAGE_TITLE = PropertiesHelpers.getValue("REGISTERED_NURSE_COURSE_PAGE_TITLE");
+    public static final String NURSE_PRACTITIONER_COURSE_PAGE_TITLE = PropertiesHelpers.getValue("NURSE_PRACTITIONER_COURSE_PAGE_TITLE");
+    public static final String ASSISTED_LIVING_FACILITY_MANAGER_COURSE_PAGE_TITLE = PropertiesHelpers.getValue("ASSISTED_LIVING_FACILITY_MANAGER_COURSE_PAGE_TITLE");
+    public static final String ASSISTED_LIVING_NURSING_COURSE_PAGE_TITLE = PropertiesHelpers.getValue("ASSISTED_LIVING_NURSING_COURSE_PAGE_TITLE");
+    public static final String CAREGIVERS_COURSE_PAGE_TITLE = PropertiesHelpers.getValue("CAREGIVERS_COURSE_PAGE_TITLE");
+    public static final String ALF_TRAINING_COURSE_PAGE_TITLE = PropertiesHelpers.getValue("ALF_TRAINING_COURSE_PAGE_TITLE");
+    public static final String ATHLETIC_TRAINERS_COURSE_PAGE_TITLE = PropertiesHelpers.getValue("ATHLETIC_TRAINERS_COURSE_PAGE_TITLE");
+    public static final String MASSAGE_THERAPY_COURSE_PAGE_TITLE = PropertiesHelpers.getValue("MASSAGE_THERAPY_COURSE_PAGE_TITLE");
+    public static final String OCCUPATIONAL_THERAPY_COURSE_PAGE_TITLE = PropertiesHelpers.getValue("OCCUPATIONAL_THERAPY_COURSE_PAGE_TITLE");
+    public static final String PHYSICAL_THERAPY_COURSE_PAGE_TITLE = PropertiesHelpers.getValue("PHYSICAL_THERAPY_COURSE_PAGE_TITLE");
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     //Zip file for Report folder
     public static final String ZIPPED_EXTENT_REPORTS_FOLDER = EXTENT_REPORT_FOLDER + ".zip";
