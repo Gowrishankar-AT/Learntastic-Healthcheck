@@ -21,11 +21,11 @@ public class EmailConfig {
     public static final String SERVER = "smtp.hostinger.com";
     public static final String PORT = "587";
 
-    public static final String FROM = "shankar@thinktime.in";
-    public static final String PASSWORD = "Shankar@2024";
+    public static final String FROM = "learntastic@thinktime.in";
+    public static final String PASSWORD = "Thinktime@2025";
 
 //"satnam@cpraedcourse.com","shankar@thinktime.in","sunnykumar@cpraedcourse.com","hieu@cpraedcourse.com","ranjan@learntastic.com","rohan@cpraedcourse.com","debasree@cpraedcourse.com"
-    public static final String[] TO = {"priya@thinktime.in","satnam@cpraedcourse.com","sunnykumar@cpraedcourse.com","hieu@cpraedcourse.com","ranjan@learntastic.com","rohan@cpraedcourse.com","debasree@cpraedcourse.com","manish@cpraedcourse.com"};
+    public static final String[] TO = {"priya@thinktime.in"};
 
 
 //    public static final String[] TO = {"priya@thinktime.in","satnam@learntastic.com"};
