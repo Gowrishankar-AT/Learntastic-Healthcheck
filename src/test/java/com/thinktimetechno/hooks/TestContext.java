@@ -15,7 +15,10 @@ public class TestContext {
 	public TestContext() {
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		driver = ThreadGuard.protect(new TargetFactory().createInstance());
-		driver.manage().window().maximize();
+	    String headless = FrameworkConstants.HEADLESS;
+	    if (!headless.equalsIgnoreCase("true")) {
+	        driver.manage().window().maximize();
+	    }
 		DriverManager.setDriver(driver);
 		LogUtils.info("Driver in TestContext: " + getDriver());
 	}
